@@ -1,0 +1,784 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+}
+
+.hero-container {
+  background-color: #051c2c;
+  background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
+  color: #fff;
+  text-shadow: 1px 1px 0 rgb(0 0 0 / 20%);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger-menu {
+  width: 30px;
+  height: 30px;
+}
+
+.burger-container {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.company-menu {
+  /* padding: 20px; */
+  display: flex;
+  gap: 30px;
+}
+
+.company-logo-header {
+  padding-top: 20px;
+}
+
+.company-name {
+  margin-left: 30px;
+}
+
+.company-logo-header div {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.left-nav span {
+  padding: 0 10px;
+}
+
+.sign-container {
+  padding: 10px;
+}
+
+.sign-span {
+  border-right: 1px solid black;
+}
+
+.svg-div {
+  text-align: end;
+  padding-top: 0;
+  padding: 10px;
+}
+
+.search {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.section-container {
+  display: flex;
+}
+
+.text-container {
+  width: 50%;
+  padding: 0px 80px 80px 80px;
+}
+
+.text-container > h1 {
+  font-size: 2.7rem;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+}
+
+.image-section {
+  width: 50%;
+}
+
+.hero-links a {
+  font-weight: 900;
+}
+
+a:hover {
+  color: #2251ff;
+}
+
+@media (max-width: 700px) {
+  .section-container {
+    flex-direction: column;
+  }
+
+  .reverse-container {
+    flex-direction: column-reverse;
+  }
+
+  .text-container {
+    width: 100%;
+    height: 60vh;
+    padding: 30px 20px;
+  }
+
+  .text-container > h1 {
+    font-size: 2.3rem;
+  }
+  .image-section {
+    width: 100%;
+  }
+}
+
+.trends-container {
+  display: flex;
+  padding: 20px 60px;
+}
+
+.trends-container ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.trends-container li {
+  display: flex;
+}
+
+.trends-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.num {
+  border-right: 1px solid blue;
+  color: #2251ff;
+  font-size: 1.5rem;
+  padding: 0px 5px;
+}
+
+.trends-content {
+  padding-left: 5px;
+}
+
+@media (max-width: 700px) {
+  .trends-container {
+    overflow: scroll;
+    padding: 10px 10px;
+  }
+
+  .trends-content {
+    width: 180px;
+    padding: 5px;
+  }
+}
+
+.text-container > h2 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 700px) {
+  .text-container > h2 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+
+  .text-container {
+    height: auto;
+  }
+  .text-container p {
+    font-size: 1rem;
+  }
+
+  .section-link div {
+    padding-bottom: 5px;
+  }
+}
+
+.section-link a {
+  color: black;
+  font-weight: bold;
+}
+
+.section-link div {
+  padding: 5px;
+}
+
+.section-link a:hover {
+  color: #2251ff;
+}
+
+.author-container {
+  background-color: #051c2c;
+  background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
+  color: #fff;
+  text-shadow: 1px 1px 0 rgb(0 0 0 / 20%);
+}
+
+.author-container a {
+  color: white;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 15vh;
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.image-background {
+  padding: 0;
+  width: 50%;
+  height: 80vh;
+  background-image: url("https://www.mckinsey.com/~/media/mckinsey/about%20us/mckinsey%20blog/new%20research%2014%20tech%20trends%20to%20track/techtrends-hero-small-1178244831-1536x864.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.div-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0;
+  padding: 30px;
+  height: 50%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  z-index: 2;
+}
+
+.div-content a {
+  color: black;
+}
+
+.img-content {
+  color: black;
+}
+
+.content-container time {
+  font-weight: bold;
+}
+
+.content-container h3 {
+  font-size: 2rem;
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .div-content h3 a {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.adjacent-part {
+  width: 50%;
+  height: 80vh;
+}
+
+.upper-part {
+  height: 50%;
+  display: flex;
+}
+
+.left-image {
+  background-image: url("https://www.mckinsey.com/~/media/mckinsey/about%20us/mckinsey%20blog/addressing%20europes%20other%20crisis/eumediaday-hero-small-panel-1536x864.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  /* height: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.right-part {
+  width: 50%;
+  height: 50%;
+  padding: 120px 50px 10px 30px;
+}
+
+.right-part h3 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.right-part a {
+  color: black;
+}
+
+.right-part a:hover {
+  color: #2251ff;
+}
+
+.responsive-content {
+  background-color: rgba(0 0 0 / 50%);
+  padding: 40px 30px 10px 40px;
+}
+
+.responsive-content time {
+  color: white;
+}
+
+.lower-part {
+  width: 100%;
+  height: 50%;
+  padding: 30px 400px 20px 30px;
+  background-color: #051c2c;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgb(0 0 0 / 20%);
+}
+
+.lower-part > h3 {
+  font-size: 1.3rem;
+}
+
+.responsive-content {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .image-background {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .adjacent-part {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .right-part {
+    display: none;
+  }
+
+  .responsive-content {
+    display: block;
+  }
+
+  .left-image {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .lower-part {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 40px 20px 30px;
+    background-color: #051c2c;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgb(0 0 0 / 20%);
+  }
+}
+
+.containers {
+  height: 50vh;
+}
+
+.first-part {
+  width: 50%;
+  display: flex;
+}
+
+.second-part {
+  width: 50%;
+  display: flex;
+}
+
+.first-left-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0px 40px 20px 30px;
+}
+
+.first-right-part {
+  width: 50%;
+  background-image: url("https://www.mckinsey.com/~/media/mckinsey/about%20us/mckinsey%20blog/mckinsey%20and%20aws%20expand%20alliance%20to%20tackle%20the%20next%20horizon%20of%20cloud%20transformation/aws-hero-small-1368458976-1536x864.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.second-part {
+  width: 50%;
+  display: flex;
+}
+
+.second-left-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0px 40px 20px 30px;
+}
+
+.second-right-part {
+  width: 50%;
+  background-image: url("https://www.mckinsey.com/~/media/mckinsey/about%20us/mckinsey%20blog/farnborough%20international%20air%20show%202022/farnborough-hero-small-1305916100-1536x864.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.blog {
+  background-color: #2251ff;
+}
+
+@media (max-width: 700px) {
+  .containers {
+    border: 1px solid black;
+    height: auto;
+  }
+
+  .first-part {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .responsive-cloud {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .second-part {
+    width: 100%;
+    height: auto;
+  }
+
+  .first-right-part {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .first-right-part time {
+    color: black;
+  }
+
+  .second-right-part {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+  }
+
+  .first-right-part {
+    width: 100%;
+  }
+  .first-left-part {
+    display: none;
+  }
+  .second-left-part {
+    display: none;
+  }
+}
+
+.video-text-container {
+  padding: 80px;
+}
+
+.text-video {
+  margin: 0;
+  padding: 0px 40px;
+}
+
+.text-video h2 {
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.text-video-links div {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.text-video a {
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .video-text-container {
+    padding: 60px 20px;
+  }
+
+  .text-video {
+    padding: 40px 0px;
+  }
+
+  .text-video h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.background-customization {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.background-customization h2 {
+  margin: 0;
+}
+
+.background-customization p {
+  line-height: 1.6rem;
+}
+
+.careers-links div {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.careers-links a {
+  color: black;
+}
+
+.careers-image {
+  width: 50%;
+  height: 90vh;
+  background-image: url("https://www.mckinsey.com/~/media/mckinsey/home%20page/vi%20feb%202019/careers_tout_yin-yang_london_group_-5_1232x1640_bright.jpg?mw=767");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 700px) {
+  .careers-image {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+.help {
+  margin-top: 60px;
+  background-color: #051c2c;
+  background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
+  color: #fff;
+  text-shadow: 1px 1px 0 rgb(0 0 0 / 20%);
+  text-align: center;
+  height: 30vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.help h2 {
+  font-size: 2.5rem;
+}
+
+.help span {
+  font-size: 1.2rem;
+}
+
+.help a {
+  border-bottom: 1px solid #2251ff;
+  margin: 0px 10px 0px 0px;
+}
+
+@media (max-width: 700px) {
+  .help h2 {
+    font-size: 1.7rem;
+  }
+
+  .help span {
+    font-size: 0.9rem;
+  }
+}
+/* Footer */
+footer {
+  padding: 80px;
+}
+
+.upper-footer {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding-bottom: 40px;
+}
+
+.company-logo {
+  font-size: 2.2rem;
+  font-weight: 300;
+  font-family: "mck-icons";
+}
+
+.company {
+  margin-left: 50px;
+}
+
+.subscribe-container h4 {
+  margin-bottom: 0;
+}
+
+.subscribe-container p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.email-input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid black;
+  font-size: 1rem;
+}
+
+.submit-button {
+  margin-left: 10px;
+  background-color: #2251ff;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.upper-footer a {
+  color: black;
+}
+
+.upper-right-footer {
+  padding-top: 80px;
+}
+
+.upper-right-footer > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.language-footer {
+  margin-top: 20px;
+  text-align: end;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.language-span {
+  padding-right: 10px;
+}
+
+.social-media {
+  text-align: end;
+  padding-top: 40px;
+}
+
+.social-media svg {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+}
+
+.lower-footer {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid black;
+}
+
+.lower-footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.footer-message {
+  width: 270px;
+  line-height: 1.2rem;
+}
+
+.apps-container {
+  display: flex;
+  gap: 30px;
+}
+
+.apps {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  footer {
+    padding: 40px 30px;
+  }
+
+  .upper-footer {
+    flex-direction: column;
+  }
+
+  .language-footer {
+    text-align: start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media {
+    text-align: start;
+    margin-bottom: 30px;
+  }
+
+  .upper-right-footer {
+    padding: 30px 0px 0px 0px;
+  }
+
+  .upper-right-footer > ul {
+    padding: 20px 0px;
+  }
+
+  .upper-right-footer > ul a {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 700px) {
+  .lower-footer {
+    flex-direction: column;
+  }
+
+  .apps-container {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
